@@ -1,0 +1,40 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.grid-canvas{
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.canvas-element{
+  width: 100%;
+  max-width: 28rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+canvas {
+  border: 1px solid #000;
+}
